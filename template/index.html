@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>machine learning</title>
+
+</head>
+
+<body>
+    <div class="login">
+        <h1>KNOW YOUR STRESS LEVEL</h1>
+
+
+                    <!-- Main Input For Receiving Query to our ML -->
+                    <form action="{{ url_for('predict')}}" method="post">
+            <input type="text" name="experience" placeholder="Respiration Rate" required="required" />
+            <input type="text" name="test_score" placeholder="Body Temperature" required="required" />
+            <input type="text" name="interview_score" placeholder="Sleeping Hours" required="required" />
+            <input type="text" name="interview" placeholder="Heart rate" required="required" />
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">YOUR STRESS LEVEL</button>
+        </form> 
+
+                
+            </div>
+
+            <br>
+            <br>
+            {{ prediction_text }}
+
+        
+
+        
+
+
+
+
+
+
+
+
+        <!-- <br>
+        <br>
+        {{ prediction_text }} -->
+</body>
+
+</html>
